@@ -5,9 +5,8 @@ import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.GregorianCalendar;
+import java.util.Date;
 
-import javax.sql.rowset.spi.TransactionalWriter;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -25,7 +24,7 @@ public class Main1 {
 		Transakcija t = new Transakcija();
 		t.setIzvornaValuta("USD");
 		t.setKrajnjaValuta("CAD");
-		t.setDatumTransakcije(new GregorianCalendar());
+		t.setDatumTransakcije(new Date());
 
 		t.setPocetniIznos(123.0);
 

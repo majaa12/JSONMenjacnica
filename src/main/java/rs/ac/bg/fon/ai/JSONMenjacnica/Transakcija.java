@@ -1,6 +1,8 @@
 package rs.ac.bg.fon.ai.JSONMenjacnica;
 
-import java.util.GregorianCalendar;
+import java.util.Date;
+
+
 
 public class Transakcija {
 
@@ -8,7 +10,7 @@ public class Transakcija {
 	private String krajnjaValuta;
 	private double pocetniIznos;
 	private double konvertovaniIznos;
-	private GregorianCalendar datumTransakcije;
+	private Date datumTransakcije;
 
 	public String getIzvornaValuta() {
 		return izvornaValuta;
@@ -42,11 +44,11 @@ public class Transakcija {
 		this.konvertovaniIznos = konvertovaniIznos;
 	}
 
-	public GregorianCalendar getDatumTransakcije() {
+	public Date getDatumTransakcije() {
 		return datumTransakcije;
 	}
 
-	public void setDatumTransakcije(GregorianCalendar datumTransakcije) {
+	public void setDatumTransakcije(Date datumTransakcije) {
 		this.datumTransakcije = datumTransakcije;
 	}
 
